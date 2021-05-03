@@ -1,0 +1,12 @@
+.loading-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, #5A68EF, #5A68EF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,482 @@
+.carddetails-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.carddetails-overlay .carddetails-wrapper {
+    width: 50%;
+    height: 90%;
+    background-color: #F4F5F7;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carddetails-overlay .carddetails-wrapper .cover {
+    width: 100%;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .cover button {
+    background-color: #e5e5e5;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    width: 150px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    color: #a5a5a5;
+    margin-right: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head div {
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head div .column-name {
+    font-weight: normal;
+    font-size: 13px;
+    color: #616161;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head div p {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #172b4d;
+    font-weight: bold;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head span {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-head span:hover {
+    background-color: #e5e5e5;
+    
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left {
+    width: 70%;
+    height: 65vh;
+    padding:0 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-due {
+    width: 100%;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-due p {
+    margin-left: 30px;
+    font-size: 12px;
+    color: #5e6c84;
+    margin-bottom: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-due .due-check {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-due .due-check p {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 13px;
+    background-color: #EAECF0;
+    padding: 0.5rem 0.5rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-due .due-check p span {
+    padding: 0.2rem 0.5rem;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-btn button {
+    margin:10px 0 10px 30px;
+    padding:0.35rem 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #EAECF0;
+    color: #172b4d;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-btn input {
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 2px solid #172b4d;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-btn div {
+    margin:10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-btn div button {
+    background-color: rgba(90,172,68,0.85);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-head p {
+    margin-left: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-head button {
+    background-color: #EAECF0;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body .item span {
+    float: right;
+    font-size: 13px;
+    color: #616161;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body .item p{
+    font-size: 13px;
+    color: #172b4d;
+    margin-left: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body .item input {
+    cursor: pointer;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body textarea {
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #EAECF0;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body textarea:focus {
+    background-color: #fff;
+    border: 2px solid #172b4d;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body div {
+    margin:10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body div button {
+    background-color: rgba(90,172,68,0.85);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-description .carddetails-desc-body div span {
+    cursor: pointer;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-head p {
+    margin-left: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body input {
+    width: 90%;
+    border: 1px solid #c5c5c5;
+    outline: none;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    background-color: #fff;
+    display: flex;
+    transition: height 0.3s ease-in-out;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body input:focus {
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25);
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body .comment-list {
+    width: 90%;
+    display: flex;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body .cmt-btn {
+    width: 100%;
+    margin:0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body .cmt-btn button {
+    background-color: #e5e5e5;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    width: 100px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    color: #a5a5a5;
+    margin-right: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-left .carddetails-comments .comment-body .cmt-btn span {
+    cursor: pointer;
+}
+
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right {
+    width: 30%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal {
+    width: 300px;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-head p {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-head span {
+    margin: 0;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-body input {
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    outline: none;
+    border-radius: 3px;
+    margin: 1rem 0;
+    padding: 0.7rem;
+    background-color: #fff;
+    display: flex;
+    transition: height 0.3s ease-in-out;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .checklist-modal .checklist-modal-body button {
+    background-color: rgba(90,172,68,0.85);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .date-modal {
+    /* width: 300px; */
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    right: -200px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.35);
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .date-modal .date-modal-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .date-modal .date-modal-head p {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .date-modal .date-modal-head span {
+    margin: 0;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 p {
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .menu-box {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #EAECF0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .menu-box:hover {
+    background-color: #e5e5e5;
+}
+
+.carddetails-overlay .carddetails-wrapper .carddetails-body .carddetails-right .menu1 .menu-box p {
+    font-size: 13px;
+    margin: 0rem;
+    margin-left: 10px;
+}

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "logo";
+  src: url("../../assets/staticFonts/Amaranth-Regular.ttf");
+}
+
+.nav-container {
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.nav-container .nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .nav-section .logo-container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+.nav-container .nav-section .menu-box {
+    padding: 0.4rem;
+    border-radius: 3px;
+    background-color: hsla(0,0%,100%,.45);
+    margin-right: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container .nav-section .menu-box:last-child {
+    margin: 0;
+}
+
+.nav-container .nav-section .menu-box:hover {
+    background-color: hsla(0,0%,100%,.25);
+}
+
+.nav-container .nav-section .menu-box p {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.nav-container .nav-section .menu-box input {
+    margin-right: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.nav-container .nav-section .menu-box input::placeholder {
+    color: #fff;
+}
+
+.nav-container .nav-section h1 {
+    font-family: 'logo';
+    letter-spacing: 0.5px;
+    color: hsla(0,0%,100%,0.75);
+}
+
+.nav-container .nav-section h1:hover {
+    color: hsla(0,0%,100%,0.9);
+    cursor: pointer;
+}
+
+.nav-container .nav-section img {
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}

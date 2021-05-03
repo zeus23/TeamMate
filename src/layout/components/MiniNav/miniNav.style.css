@@ -1,0 +1,47 @@
+.mininav-container {
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.35);
+    position: relative;
+}
+
+.mininav-container .mininav-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mininav-container .mininav-section .midline {
+    width: 1.2px;
+    height: 17px;
+    background-color: hsla(0,0%,100%,.25);
+    margin: 0 0.5rem;
+}
+
+.mininav-container .mininav-section .menu-box {
+    padding: 0.4rem 0.6rem;
+    border-radius: 3px;
+    background-color: hsla(0,0%,100%,.25);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mininav-container .mininav-section .menu-box:last-child {
+    margin: 0;
+}
+
+.mininav-container .mininav-section .menu-box:hover {
+    background-color: hsla(0,0%,100%,.35);
+}
+
+.mininav-container .mininav-section .menu-box p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin-left: 5px;
+}

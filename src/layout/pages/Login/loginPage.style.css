@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "logo";
+  src: url("../../assets/staticFonts/Amaranth-Regular.ttf");
+}
+
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #F9FAFC;
+}
+
+.login-container .login-left-container {
+    width: 60%;
+    height: 100%;
+    background-image: url('../../assets/loginBg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login-container .login-left-container img {
+    position: absolute;
+    bottom: 10vh;
+    right: 15%;
+}
+
+.login-container .login-right-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.login-container .login-right-container .login-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-right-container .login-head img {
+    height: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.login-container .login-right-container .login-head h1 {
+    font-family: 'logo';
+    cursor: pointer;
+    color: #253858;
+}
+
+.login-container .login-right-container .login-body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+}
+
+.login-container .login-right-container .login-body .login-form {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 25px 40px;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container .login-right-container .login-body .login-form h4 {
+    color: #616161;
+    margin: 0;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group .form-input {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #FAFBFC;
+    outline: none;
+    border: 1.5px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group .login-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #42d897 0%, #42d897 51%, #42d897 100%);
+    padding: 0.8rem 0;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group .google-btn {
+     width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #505f79;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group button img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group p {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group .line {
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    margin: 1rem 0;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #0052cc;
+}
+
+.login-container .login-right-container .login-body .login-form .form-group a:hover {
+    text-decoration: underline;
+}

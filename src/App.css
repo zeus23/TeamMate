@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "mulish";
+  src: url("./layout/assets/staticFonts/Mulish-Regular.ttf");
+}
+
+*,body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "mulish";
+}
+
+.App {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}

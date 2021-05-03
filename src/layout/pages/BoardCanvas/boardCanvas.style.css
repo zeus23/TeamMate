@@ -1,0 +1,98 @@
+.canvas-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+
+.canvas-container .canvas-boards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.canvas-container .canvas-boards .column-container {
+    width: 100%;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.canvas-container .canvas-boards .column-container .add-list-btn {
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: hsla(0,0%,100%,.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-container .canvas-boards .column-container .add-list-btn:hover {
+    background-color: hsla(0,0%,100%,.35);
+}
+
+.canvas-container .canvas-boards .column-container .add-list-btn .add-list-head{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.canvas-container .canvas-boards .column-container .add-list-btn .add-list-head p {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+.canvas-container .canvas-boards .column-container .add-form {
+    height: 100px;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: hsla(0,0%,100%,.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.canvas-container .canvas-boards .column-container .add-form input {
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.25);
+    padding: 0 0.5rem;
+}
+
+.canvas-container .canvas-boards .column-container .add-form div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.canvas-container .canvas-boards .column-container .add-form div button {
+    background-color: rgba(90,172,68,0.85);
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.canvas-container .canvas-boards .column-container .add-form div button:hover {
+   background-color: rgba(90,172,68,1);
+}
+
