@@ -15,6 +15,7 @@ import { IoClose } from 'react-icons/io5'
 const BoardCanvas = (props) => {
 
     const [currentUser, setCurrentUser] = useState(null);
+    const [owner, setOwner] = useState(null);
     const [boardInfo, setBoardInfo] = useState(null);
     const [loading, setLoading] = useState(true);
     const [showAddList, setShowAddList] = React.useState(false);
@@ -23,6 +24,8 @@ const BoardCanvas = (props) => {
     const [title, setTitle] = React.useState('');
 
     useEffect(() => {
+
+        // Check for authentication
         firebase.auth().onAuthStateChanged((user) => {
             if (!user) {
                 window.location.href = "/login"
@@ -34,6 +37,7 @@ const BoardCanvas = (props) => {
                             querySnapshot.forEach((documentSnapshot) => {
                                 var user = documentSnapshot.data();
                                 user.id = documentSnapshot.id;
+                                // store user data
                                 setCurrentUser(user);
                                 documentSnapshot.data().boards.map((item) => {
                                     if (item.id === props.match.params.boardId && item.isFavourite) {
@@ -48,11 +52,20 @@ const BoardCanvas = (props) => {
     }, []);
 
     useEffect(() => {
+        // get board data using id and store in state and change loading to false
         firebase.firestore().collection('boards').doc(props.match.params.boardId)
             .onSnapshot((doc) => {
                 setBoardInfo(doc.data());
-                setLoading(false);
+
+                firebase.firestore().collection('users').where('email', '==', doc.data().owner).get()
+                    .then((querySnapshot) => {
+                        querySnapshot.forEach((documentSnapshot) => {
+                            setOwner(documentSnapshot.data().name);
+                            setLoading(false);
+                        })
+                    })
             })
+
     }, []);
 
     const handleTitle = (e) => {
@@ -101,7 +114,13 @@ const BoardCanvas = (props) => {
                                 ?
                                 null
                                 :
-                                <MiniNav boardInfo={boardInfo} boardId={props.match.params.boardId} isFavourite={isFavourite} currentUser={currentUser} />
+                                <MiniNav
+                                    boardInfo={boardInfo}
+                                    boardId={props.match.params.boardId}
+                                    isFavourite={isFavourite}
+                                    currentUser={currentUser}
+                                    owner={owner}
+                                />
                         }
                         <div className="canvas-boards">
                             <div className="column-container">
@@ -148,7 +167,13 @@ const BoardCanvas = (props) => {
                                 ?
                                 null
                                 :
-                                <MiniNav boardInfo={boardInfo} boardId={props.match.params.boardId} isFavourite={isFavourite} currentUser={currentUser} />
+                                <MiniNav
+                                    boardInfo={boardInfo}
+                                    boardId={props.match.params.boardId}
+                                    isFavourite={isFavourite}
+                                    currentUser={currentUser}
+                                    owner={owner}
+                                />
                         }
                         <div className="canvas-boards">
                             <div className="column-container">

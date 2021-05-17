@@ -9,7 +9,7 @@ import { MdTitle } from 'react-icons/md'
 import firebase from '../../../config/firebaseConfig';
 
 const MiniNav = (props) => {
-
+    // Function for toggling favourite board
     const handleToggleFavourite = () => {
         firebase.firestore().collection('users').doc(props.currentUser.id).get()
             .then((res) => {
@@ -30,8 +30,7 @@ const MiniNav = (props) => {
             <div className="mininav-section">
                 <div className="menu-box">
                     <BiNetworkChart color="#fff" style={{ margin: "0 0.3rem" }} />
-                    <p>Zohaib Kibria's workspace</p>
-
+                    <p>{props.owner}'s workspace</p>
                 </div>
                 <div className="midline"></div>
                 <div className="menu-box">
