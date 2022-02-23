@@ -156,13 +156,13 @@ const SignupPage = () => {
                                     }
                                 </button>
                             </div>
-                            <div className="form-group">
+                            {/* <div className="form-group">
                                 <p>OR</p>
                             </div>
 
                             <div className="form-group">
                                 <button type="button" className="google-btn"><img src={googleIcon} />Continue with Google</button>
-                            </div>
+                            </div> */}
 
                             <div className="form-group">
                                 <a href="/login">Already have an account ? Click to Log in</a>

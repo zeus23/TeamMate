@@ -61,7 +61,7 @@ const HomePage = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="homepage-right-menu">
+                    {/* <div className="homepage-right-menu">
                         <RecentlyViewed />
 
                         <div className="create-link-menu">
@@ -73,7 +73,7 @@ const HomePage = (props) => {
                                 <p>Create a board</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

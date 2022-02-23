@@ -43,10 +43,10 @@ const MiniNav = (props) => {
                     <p>Workspace visible</p>
                 </div>
                 <div className="midline"></div>
-                <div className="menu-box">
+                {/* <div className="menu-box">
                     <BiUserPlus color="#fff" style={{ margin: "0 0.2rem" }} />
                     <p>Invite</p>
-                </div>
+                </div> */}
             </div>
             <div className="mininav-section">
                 <div className="menu-box" onClick={handleToggleFavourite}>
@@ -58,11 +58,11 @@ const MiniNav = (props) => {
                             <BsStar color="#fff" />
                     }
                 </div>
-                <div className="midline"></div>
+                {/* <div className="midline"></div>
                 <div className="menu-box">
                     <BiMenu color="#fff" style={{ margin: "0 0.2rem" }} />
                     <p>Show Menu</p>
-                </div>
+                </div> */}
             </div>
         </nav>
     )

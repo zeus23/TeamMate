@@ -44,10 +44,10 @@ const Navbar = (props) => {
                     <BiClipboard color="#fff" size={20} />
                     <p>Boards</p>
                 </div>
-                <div className="menu-box">
+                {/* <div className="menu-box">
                     <input type="text" placeholder="Search..." />
                     <BiSearch color="#fff" size={20} />
-                </div>
+                </div> */}
             </div>
             <div className="nav-section">
                 <div className="logo-container">
@@ -56,9 +56,7 @@ const Navbar = (props) => {
                 </div>
             </div>
             <div className="nav-section">
-                <div className="menu-box">
-                    <BiPlus color="#fff" size={20} />
-                </div>
+
                 <div className="menu-box">
                     <BiInfoCircle color="#fff" size={20} />
                 </div>
